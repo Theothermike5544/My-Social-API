@@ -10,9 +10,11 @@ const UserSchema = new Schema (
         },
         email: {
             type: String,
-            required: true,
+            required: 'Enter a personal email!',
             unique: true,
-            // requires a match on a validated email
+            //Email REGEX Validation
+            match: [/^([a-z0-9_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})$/, 'Enter a valid e-mail address!']
+            
         },
         thoughts: [
             {
@@ -30,7 +32,8 @@ const UserSchema = new Schema (
     {
         toJSON: {
             virtuals: true
-        }
+        },
+        id: false
     }
 );
 
