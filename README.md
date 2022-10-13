@@ -42,7 +42,7 @@ Follow this up by inspecting the application's files, specifically the controlle
  
   * Github Repository URL: (https://github.com/Theothermike5544/My-Social-API)
 
-  * Video Walk-through demonstration: 
+  * Video Walk-through demonstration: (https://drive.google.com/file/d/1tjXKJuJubOjPdy3-zFdfLIWOwCp9mYiZ/view)
   
 ## Contributions
 
