@@ -9,11 +9,12 @@ app.use(express.urlencoded({ extended: true }));
 
 app.use(require('./routes'));
 
+// connect mongoose api
 mongoose.connect(process.env.MONGODB_URI || 'mongodb://127.0.0.1:27017/social-media-api', {
     useNewUrlParser: true,
     useUnifiedTopology: true
 });
-
+// log queries
 mongoose.set('debug', true);
 
 app.listen(PORT, () => console.log(`🌍 Connected on localhost:${PORT}`));
